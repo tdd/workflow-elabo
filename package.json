@@ -1,0 +1,40 @@
+{
+  "author": "Christophe Porteneuve",
+  "name": "js-total-spa",
+  "description": "SPA basis for day #3 of JS Total  training",
+  "private": true,
+  "version": "1.0.0",
+  "homepage": "http://www.js-attitude.fr/js-total/",
+  "engines": {
+    "node": "~0.10.24"
+  },
+  "scripts": {
+    "start": "brunch watch --server",
+    "test": "NODE_PATH=app mocha -R spec",
+    "testing": "NODE_PATH=app mocha -R spec -w",
+    "test-cov": "NODE_PATH=app mocha -r blanket -R html-cov > test/coverage.html"
+  },
+  "config": {
+    "blanket": {
+      "pattern": "app",
+      "data-cover-never": "node_modules"
+    }
+  },
+  "dependencies": {
+    "express": "~3.4.0",
+    "javascript-brunch": "> 1.0 < 1.8",
+    "less-brunch": "> 1.0 < 1.8",
+    "stylus-brunch": "> 1.0 < 1.8",
+    "css-brunch": "> 1.0 < 1.8",
+    "handlebars-brunch": "> 1.0 < 1.8",
+    "uglify-js-brunch": "> 1.0 < 1.8",
+    "clean-css-brunch": "> 1.0 < 1.8",
+    "appcache-brunch": "> 1.0 < 1.8",
+    "socket.io": "~0.9.16"
+  },
+  "devDependencies": {
+    "mocha": "~1.14.0",
+    "blanket": "~1.1.0",
+    "backbone": "~1.1.0"
+  }
+}
