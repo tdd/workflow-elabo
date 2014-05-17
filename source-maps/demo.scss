@@ -1,0 +1,10 @@
+@import "colors";
+
+body {
+  font-family: sans-serif;
+  font-size: $titleSize;
+  color: $mainColor;
+
+  // Needlessly nested, just to differentiate SASS and CSS…
+  input[type="text"] { border: 1px solid silver; }
+}
