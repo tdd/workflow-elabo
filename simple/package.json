@@ -1,0 +1,13 @@
+{
+  "name": "workflow-elabo-simple",
+  "private": true,
+  "version": "0.0.1",
+  "engines": {
+    "node": "~0.10.24"
+  },
+  "dependencies": {
+    "javascript-brunch": "> 1.0 < 1.8",
+    "stylus-brunch": "> 1.0 < 1.8",
+    "css-brunch": "> 1.0 < 1.8"
+  }
+}
